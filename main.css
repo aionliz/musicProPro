@@ -163,13 +163,36 @@ body{
     }
 }
 .side-content div{
-    background-color: lightpink;
+    background-color: var(--pupple);
     grid-column:  4 / 7;
     grid-row: 1 / 2;
     height: 100%;
-    z-index: 2;
+   
 }
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
 
+    background: var(--pupple);
+    border-radius: 0 80px 0 0;
+    transform: translateY(100%);
+
+    animation-name:footer ;
+    animation-duration: 0.5s;
+    animation-delay: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+
+}
+@keyframes footer{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
 
 
 
